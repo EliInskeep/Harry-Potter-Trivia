@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  background: rgb(92, 92, 92);
+  background: url(/img/Hogwarts.jpeg);
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.nav-items a,
+.container a {
+  text-decoration: none;
+}
+
+.navbar ul,
+.container ul {
+  list-style-type: none;
+}
+
+.container {
+  background: none;
+  justify-content: center;
+  align-items: center;
+}
