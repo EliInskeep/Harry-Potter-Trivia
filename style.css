@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
-  background: rgb(92, 92, 92);
-  background: url(/img/Hogwarts.jpeg);
 }
 
 body {
   font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
+  background: url(/img/Hogwarts.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Cinzel", serif;
 }
 
 body,
@@ -18,18 +20,89 @@ p {
   margin: 0;
 }
 
-.nav-items a,
-.container a {
-  text-decoration: none;
-}
-
+/* Navbar */
 .navbar ul,
 .container ul {
   list-style-type: none;
 }
 
+.navbar {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  position: absolute;
+  justify-content: space-between;
+  top: 1rem;
+  right: 2rem;
+  margin: 1rem 0;
+}
+
+.navbar li {
+  display: inline;
+  padding: 1rem;
+}
+
+.nav-items a,
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-items a:hover {
+  color: rgb(163, 163, 163);
+}
+
+.nav-items li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.nav-items li a:hover::after,
+nav-items li a:focus::after {
+  transform: scale(1);
+}
+
 .container {
-  background: none;
+  display: flex;
+  height: 110vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 5px 0 10px #000000;
+  font-family: "Cinzel", serif;
+  margin-bottom: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  width: 25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background: rgb(3, 169, 252);
 }
