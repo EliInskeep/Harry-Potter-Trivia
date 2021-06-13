@@ -43,7 +43,8 @@ p {
 
 .navbar li {
   display: inline;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .nav-items a,
@@ -100,9 +101,15 @@ h1 {
   font-size: 2.2rem;
   font-weight: bold;
   padding: 1rem 0;
-  width: 25rem;
+  width: 22rem;
   text-align: center;
   margin-bottom: 2rem;
   border-radius: 10px;
-  background: rgb(3, 169, 252);
+  background: #000000;
+}
+
+.btn {
+  overflow: hidden;
+  border: 1px solid;
+  transition: 0.5s;
 }
