@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  background: url(/img/Hogwarts.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Cinzel", serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar ul,
+.container ul {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  position: absolute;
+  justify-content: space-between;
+  top: 1rem;
+  right: 2rem;
+  margin: 1rem 0;
+}
+
+.navbar li {
+  display: inline;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.nav-items a,
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-items a:hover {
+  color: rgb(163, 163, 163);
+}
+
+.nav-items li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.nav-items li a:hover::after,
+nav-items li a:focus::after {
+  transform: scale(1);
+}
