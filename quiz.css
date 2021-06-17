@@ -6,10 +6,13 @@ body {
   font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
+  font-family: "Cinzel", serif;
+}
+
+html {
   background: url(/img/Hogwarts.jpeg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-  font-family: "Cinzel", serif;
 }
 
 body,
@@ -66,4 +69,19 @@ p {
 .nav-items li a:hover::after,
 nav-items li a:focus::after {
   transform: scale(1);
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: rgb();
+  font-size: 3rem;
+  min-width: 80rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: ;
 }

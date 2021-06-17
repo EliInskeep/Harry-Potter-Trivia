@@ -12,53 +12,58 @@
     <title>Quiz Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.wizardingworld.com/writing-by-jk-rowling" target="blank">J.K. Rowling Archive</a></li>
-            <li><a href="https://my.wizardingworld.com/sorting-hat" target="blank">Discover your Hogwarts House</a></li>
-            <li><a href="https://www.wizardingworld.com/quiz" target="blank">More Quizes</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div id="quiz" class="justify-center flex-column">
-            <div id="hud">
-                <div class="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
+    <section class="wrapper">
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.wizardingworld.com/quiz" target="blank">More Quizes</a></li>
+                <li><a href="https://www.wizardingworld.com/writing-by-jk-rowling" target="blank">J.K. Rowling Archive</a></li>
+                <li><a href="https://my.wizardingworld.com/sorting-hat" target="blank">Discover your Hogwarts House</a></li>
+            </ul>
+        </nav>
+    
+        <div class="container">
+            <div id="quiz" class="justify-center flex-column">
+                <div id="hud">
+                    <div class="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
                     </div>
+                     <div class="hud-item">
+                         <p class="hud-prefix">
+                             Score
+                         </p>
+                         <h1 class="hud-main-text" id="score">
+                             0
+                         </h1>
+                     </div>
                 </div>
-                 <div class="hud-item">
-                     <p class="hud-prefix">
-                         Score
-                     </p>
-                     <h1 class="hud-main-text" id="score">
-                         0
-                     </h1>
-                 </div>
-            </div>
-            <div id="question">Where does Harry go to teach Dumbledore's Army?</div>
-            <div class="choise-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choise-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choise-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choise-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
+                <div id="question">Where does Harry go to teach Dumbledore's Army?</div>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Hogsmeade</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Room of Requirement</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Room of Necessity</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Room of Requistion</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <script src="main.js"></script>
+
 </body>
 </html>
