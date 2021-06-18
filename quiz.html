@@ -7,21 +7,20 @@
     <script src="https://kit.fontawesome.com/6a5055c382.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="quiz.css">
     <title>Quiz Page</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.wizardingworld.com/quiz" target="blank">More Quizes</a></li>
+            <li><a href="https://www.wizardingworld.com/writing-by-jk-rowling" target="blank">J.K. Rowling Archive</a></li>
+            <li><a href="https://my.wizardingworld.com/sorting-hat" target="blank">Discover your Hogwarts House</a></li>
+        </ul>
+    </nav>
+
     <section class="wrapper">
-        <nav class="navbar">
-            <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.wizardingworld.com/quiz" target="blank">More Quizes</a></li>
-                <li><a href="https://www.wizardingworld.com/writing-by-jk-rowling" target="blank">J.K. Rowling Archive</a></li>
-                <li><a href="https://my.wizardingworld.com/sorting-hat" target="blank">Discover your Hogwarts House</a></li>
-            </ul>
-        </nav>
-    
         <div class="container">
             <div id="quiz" class="justify-center flex-column">
                 <div id="hud">
@@ -42,10 +41,10 @@
                          </h1>
                      </div>
                 </div>
-                <div id="question">Where does Harry go to teach Dumbledore's Army?</div>
+                <h1 id="question">Where does Harry go to teach Dumbledore's Army?</h1>
                 <div class="choice-container">
                     <p class="choice-prefix">A</p>
-                    <p class="choice-text" data-number="1">Hogsmeade</p>
+                    <p class="choice-text" data-number="1">Room of Necessity</p>
                 </div>
                 <div class="choice-container">
                     <p class="choice-prefix">B</p>
@@ -53,11 +52,11 @@
                 </div>
                 <div class="choice-container">
                     <p class="choice-prefix">C</p>
-                    <p class="choice-text" data-number="3">Room of Necessity</p>
+                    <p class="choice-text" data-number="3">Hogsmeade</p>
                 </div>
                 <div class="choice-container">
                     <p class="choice-prefix">D</p>
-                    <p class="choice-text" data-number="4">Room of Requistion</p>
+                    <p class="choice-text" data-number="4">Room of Requisition</p>
                 </div>
             </div>
         </div>
