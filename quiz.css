@@ -61,17 +61,6 @@ p {
   color: rgb(163, 163, 163);
 }
 
-.nav-items li a::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-.nav-items li a:hover::after,
-nav-items li a:focus::after {
-  transform: scale(1);
-}
-
 .container {
   display: flex;
   height: 110vh;
@@ -94,7 +83,7 @@ h1 {
   border-radius: 20px;
   background: rgb(0, 78, 204);
   font-size: 2rem;
-  min-width: 45rem;
+  min-width: 80rem;
 }
 
 .choice-container:hover {

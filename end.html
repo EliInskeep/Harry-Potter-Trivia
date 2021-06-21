@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a5055c382.js" crossorigin="anonymous"></script>
+    <title>End Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.wizardingworld.com/quiz" target="blank">More Quizes</a></li>
+            <li><a href="https://www.wizardingworld.com/writing-by-jk-rowling" target="blank">J.K. Rowling Archive</a></li>
+            <li><a href="https://my.wizardingworld.com/sorting-hat" target="blank">Discover your Hogwarts House</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form action="" class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score!</h2>
+                <input type="text" name="name" id="username"
+                placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit"
+                onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="/quiz.html" class="btn">Retry</a>
+            <a href="/index.html" class="btn">Home</a>
+        </div>
+    </div>
+    
+    <script src="end.js"></script>
+</body>
+</html>
