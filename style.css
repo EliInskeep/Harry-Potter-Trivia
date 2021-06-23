@@ -34,19 +34,20 @@ p {
   position: relative;
   top: 0;
   width: 100%;
+  margin: auto;
 }
 
 .navbar ul {
   position: absolute;
   justify-content: space-between;
-  top: 1rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
   margin: 1rem 0;
 }
 
 .navbar li {
   display: inline;
-  padding: 0.5rem;
+  padding-right: 1rem;
   font-size: 1rem;
 }
 
@@ -56,6 +57,10 @@ p {
   color: #fff;
   letter-spacing: 2px;
 }
+
+/* .nav-items {
+  border-bottom: 1px solid #fff;
+} */
 
 .nav-items a:hover {
   color: rgb(163, 163, 163);
@@ -67,13 +72,13 @@ p {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5vw;
   color: #fff;
   text-shadow: 5px 0 10px #000000;
   font-family: "Cinzel", serif;
@@ -100,6 +105,7 @@ h1 {
   margin-bottom: 2rem;
   border-radius: 50px;
   background: radial-gradient(ellipse at bottom, #fffb00 0%, #090a0f 98%);
+  max-width: 40vw;
   z-index: 3;
 }
 .btn:hover {
@@ -733,12 +739,30 @@ input::placeholder {
 @media screen and (max-width: 1360px) {
   .hogwarts {
     bottom: -25px;
-    max-width: ;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .hogwarts {
     bottom: -40px;
     max-width: 45vw;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .nav-items li {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1rem 0.4rem;
+    max-width: 55vw;
   }
 }
