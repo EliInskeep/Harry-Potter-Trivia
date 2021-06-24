@@ -64,6 +64,7 @@ p {
 
 .nav-items a:hover {
   color: rgb(163, 163, 163);
+  transition: all 0.3s;
 }
 
 .container {
@@ -80,7 +81,6 @@ p {
 h1 {
   font-size: 4.5vw;
   color: #fff;
-  text-shadow: 5px 0 10px #000000;
   font-family: "Cinzel", serif;
   margin-bottom: 3rem;
   letter-spacing: 5px;
