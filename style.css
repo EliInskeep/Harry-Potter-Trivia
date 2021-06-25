@@ -104,7 +104,7 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   border-radius: 50px;
-  background: radial-gradient(ellipse at bottom, #fffb00 0%, #090a0f 98%);
+  background: radial-gradient(ellipse at bottom, #fffb00 -10%, #090a0f 100%);
   max-width: 40vw;
   z-index: 3;
 }
