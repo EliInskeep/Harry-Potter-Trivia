@@ -1,8 +1,25 @@
+const menuBtn = document.querySelector('.menu-btn');
+const navItems = document.querySelector('nav-items');
+const expandBtn = document.querySelector('.expand-btn')
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+
+// Hamburger Menu Toggle
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("open");
+    navItems.classList.toggle("open");
+});
+
+// Mobile Menu Expand
+expandBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+    });
+});
+
 
 let currentQuestion = {};
 let acceptingAnswers = true;

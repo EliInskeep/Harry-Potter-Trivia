@@ -58,13 +58,58 @@ p {
   letter-spacing: 2px;
 }
 
-/* .nav-items {
-  border-bottom: 1px solid #fff;
-} */
-
 .nav-items a:hover {
   color: rgb(163, 163, 163);
   transition: all 0.3s;
+}
+
+.menu-btn {
+  position: absolute;
+  /* display: none; */
+  top: 0;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-btn__hamburger::before,
+.menu-btn__hamburger::after {
+  content: "";
+  position: absolute;
+}
+
+.menu-btn__hamburger,
+.menu-btn__hamburger::before,
+.menu-btn__hamburger::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__hamburger::before {
+  transform: translateY(-0.5rem);
+}
+
+.menu-btn__hamburger::after {
+  transform: translateY(0.5rem);
+}
+
+.menu-btn.open .menu-btn__hamburger {
+  transform: translateX(2rem);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__hamburger::before {
+  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+  background: #ffffff;
+}
+
+.menu-btn.open .menu-btn__hamburger::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+  background: #ffffff;
 }
 
 .container {
