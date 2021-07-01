@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('.menu-btn');
-const navItems = document.querySelector('nav-items');
+const navItems = document.querySelector('.nav-items');
 const expandBtn = document.querySelector('.expand-btn')
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));

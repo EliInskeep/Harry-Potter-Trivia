@@ -65,9 +65,9 @@ p {
 
 .menu-btn {
   position: absolute;
-  /* display: none; */
-  top: 0;
-  right: 0;
+  display: none;
+  top: 2rem;
+  right: 2rem;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
@@ -791,6 +791,33 @@ input::placeholder {
   .hogwarts {
     bottom: -40px;
     max-width: 45vw;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav-items {
+    position: absolute;
+    height: calc(100vh - 100%);
+    width: 100%;
+    max-width: 350px;
+    top: 100%;
+    right: 0;
+    background: #122331;
+    display: block;
+    padding: 1rem;
+    line-height: 3rem;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-10vh);
+    transition: all 0.3s ease-out;
+    z-index: -1;
+  }
+
+  .nav-items.open {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
