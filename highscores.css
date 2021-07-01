@@ -21,6 +21,46 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav-items {
+    position: absolute;
+    height: calc(70vh - 100%);
+    width: 100%;
+    max-width: 350px;
+    top: 100%;
+    right: 0;
+    background: #1b2735;
+    display: block;
+    padding: 1rem;
+    line-height: 3rem;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-10vh);
+    transition: all 0.3s ease-out;
+    z-index: 3;
+  }
+
+  .nav-items.open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-items li {
+    margin: 15px 10px;
+  }
+
+  .nav-items li a {
+    padding: 0 1rem;
+    display: block;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgb(255, 251, 0, 0.2);
+  }
+}
+
 @media screen and (max-width: 812px) {
   h1 {
     font-size: 8vw;
