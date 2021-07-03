@@ -147,6 +147,7 @@ h1 {
 
 .justify-center {
   max-width: 80vw;
+  min-width: 40vw;
 }
 
 .choice-container p {
