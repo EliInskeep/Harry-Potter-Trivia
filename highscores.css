@@ -70,3 +70,9 @@ h1 {
     font-size: 5vw;
   }
 }
+
+@media screen and (max-height: 800px) {
+  .nav-items {
+    height: calc(90vh - 100%);
+  }
+}

@@ -162,11 +162,11 @@ h1 {
 
 .hogwarts {
   position: fixed;
-  max-width: 40vw;
+  max-width: 45vw;
   max-height: 30vh;
   bottom: 25px;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   margin: 0;
   padding: 0;
 }
@@ -781,7 +781,7 @@ input::placeholder {
   border: none;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1550px) {
   .hogwarts {
     bottom: -25px;
   }
@@ -789,8 +789,8 @@ input::placeholder {
 
 @media screen and (max-width: 1023px) {
   .hogwarts {
-    bottom: -40px;
-    max-width: 45vw;
+    bottom: -30px;
+    max-width: 60vw;
   }
 
   .menu-btn {
@@ -841,5 +841,18 @@ input::placeholder {
     font-size: 1.8rem;
     padding: 1rem 0.4rem;
     max-width: 55vw;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .hogwarts {
+    bottom: -10px;
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .nav-items {
+    height: calc(90vh - 100%);
   }
 }

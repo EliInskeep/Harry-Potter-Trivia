@@ -12,6 +12,7 @@ body {
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 50%, #090a0f 100%);
   overflow: hidden;
+  height: 100vh;
 }
 
 body,
@@ -49,8 +50,8 @@ p {
 .navbar ul {
   position: absolute;
   justify-content: space-between;
-  top: 1rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
   margin: 1rem 0;
 }
 
@@ -75,7 +76,7 @@ p {
 .menu-btn {
   position: absolute;
   display: none;
-  top: 2.5rem;
+  top: 3rem;
   right: 3rem;
   width: 1.5rem;
   height: 1.5rem;
@@ -220,6 +221,7 @@ h1 {
   width: 0%;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1023px) {
   .menu-btn {
     display: flex;
@@ -240,7 +242,7 @@ h1 {
     opacity: 0;
     transform: translateY(-10vh);
     transition: all 0.3s ease-out;
-    z-index: 3;
+    z-index: 2;
   }
 
   .nav-items.open {
@@ -300,5 +302,36 @@ h1 {
   #question {
     font-size: 1.5rem;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .nav-items {
+    height: calc(90vh - 100%);
+  }
+
+  #question {
+    margin-top: 1rem;
+  }
+
+  #progressBar {
+    width: 15rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .choice-container p {
+    font-size: 1.5rem;
+  }
+
+  .choice-prefix,
+  .choice-text {
+    padding: 1rem 1.5rem;
+  }
+
+  .hud-prefix {
+    font-size: 2rem;
   }
 }
