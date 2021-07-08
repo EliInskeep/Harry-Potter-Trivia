@@ -58,9 +58,13 @@ p {
   letter-spacing: 2px;
 }
 
+.nav-items a {
+  transition: all 0.3s ease 0s;
+}
+
 .nav-items a:hover {
   color: rgb(163, 163, 163);
-  transition: all 0.3s;
+  transition: all 0.3s ease 0s;
 }
 
 .menu-btn {
